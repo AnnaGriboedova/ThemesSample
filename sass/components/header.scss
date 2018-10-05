@@ -1,0 +1,264 @@
+@import "../variables";
+.header{
+  width: 100%;
+  .header__statusPanelWrapper{
+    background: black;
+    .header__statusPanel{
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 1px;
+      height: 30px;
+      position: relative;
+      &:after {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        content: "";
+      }
+      .header__dateInfo, .header__timeInfo{
+        display: inline-block;
+        padding: 0 20px;
+        vertical-align: middle;
+      }
+      .header__dateInfo{
+        padding: 0;
+      }
+      .header__dateTimeSeparator{
+        border: 0.3px solid;
+        display: inline-block;
+        height: 14px;
+        margin: auto 5px;
+        vertical-align: middle;
+      }
+      .header__cashierInfoWrapper{
+        display: inline-block;
+        float: right;
+        height: 100%;
+        .header__cashierInfo{
+          display: inline-block;
+          height: 100%;
+          &:before {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            content: "";
+          }
+          .header__cashierIndicator{
+            display: inline-block;
+            background: url("../images/icons/indicatorOnOff.png") ;
+            height: 12px;
+            width: 12px;
+            background-size: cover;
+            background-position: 0 0;
+            vertical-align: middle;
+            margin: 0 40px;
+          }
+        }
+      }
+    }
+  }
+  .header__navPanelWrapper{
+    background: $mainLightGreyColor;
+    .header__navPanel{
+      display: inline-block;
+      height: 90px;
+      padding: 10px 0;
+      width: 100%;
+      .header__backButton{
+        display: inline-block;
+        height: 100%;
+        width: 160px;
+        float: left;
+        border: none;
+        background: url("../images/icons/arrowBackIc.png") white no-repeat;
+        background-size: 30px;
+        background-position: 30px;
+        font-size: 15px;
+      }
+      .header__breadcrumbs{
+        display: inline-block;
+        height: 100%;
+        .header__breadcrumbsList{
+          height: 100%;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          & li:first-child a::before {
+            content: none;
+          }
+          & li:last-child a::after {
+            content: none;
+          }
+          & li{
+            height: 100%;
+            float: left;
+            margin: 0 30px 0 10px;
+          }
+          & li:last-child .header__breadcrumbsLink{
+            background: #006CE2;
+            color: white;
+            &::before{
+              border-color: #006CE2 #006CE2 #006CE2 transparent;
+            }
+          }
+          & span{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            word-wrap: break-word;
+            max-width: 80px;
+          }
+          .header__breadcrumbsLink{
+            background: white;
+            text-decoration: none;
+            position: relative;
+            max-width: 140px;
+            padding: 0 35px;
+            height: 100%;
+            display: inline-block;
+            color: black;
+            &:hover{
+              background: $mainRedColor;
+              color: white;
+            }
+            &::before{
+              content: "";
+              position: absolute;
+              top: 50%;
+              margin-top: -35px;
+              border-width: 35px 0 35px 33px;
+              border-style: solid;
+              border-color: white white white transparent;
+              left: -33px;
+              display: inline-block;
+            }
+            &:hover::before{
+              border-color: $mainRedColor $mainRedColor $mainRedColor transparent;
+            }
+            &::after{
+              content: "";
+              position: absolute;
+              top: 50%;
+              margin-top: -35px;
+              border-top: 35px solid transparent;
+              border-bottom: 35px solid transparent;
+              border-left: 32px solid white;
+              right: -32px;
+            }
+            &:hover::after{
+              border-left-color: $mainRedColor;
+            }
+            & div{
+              height: 100%;
+              display: inline-block;
+            }
+            & div::before{
+              display: inline-block;
+              height: 100%;
+              vertical-align: middle;
+              content: "";
+            }
+          }
+        }
+      }
+      .header__toolsPanel{
+        display: inline-block;
+        float: right;
+        height: 100%;
+        .header__menuButton, .header__exitButton, .header__changeThemeButton{
+          display: inline-block;
+          height: 100%;
+          width: 95px;
+          background: white;
+          border: none;
+          float: left;
+          margin: 0 0 0 5px;
+        }
+        .header__iconMenuBtn, .header__iconExitBtn, .header__iconChangeThemeBtn{
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+        }
+        .header__iconMenuBtn{
+          background: url(../images/icons/headerMenuIc.png) center no-repeat;
+          background-size: 100% auto;
+        }
+        .header__iconExitBtn{
+          background: url(../images/icons/headerExitIc.png) center no-repeat;
+          background-size: 100% auto;
+        }
+        .header__iconChangeThemeBtn{
+          background: url(../images/icons/darkThemeBtn.png) center no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+}
+
+//
+
+.dark-theme .header{
+  .header__navPanelWrapper{
+    background: $mainDarkBackgroundColor;
+    .header__navPanel{
+      .header__backButton{
+        color: white;
+        background: url("../images/icons/arrowBackIc-white.png") $mainDarkButtonColor no-repeat;
+        background-size: 30px;
+        background-position: 30px;
+      }
+      .header__breadcrumbs{
+        .header__breadcrumbsList{
+          .header__breadcrumbsLink{
+            color: white;
+            background: $mainDarkButtonColor;
+            &:hover{
+              background: $mainRedColor;
+            }
+            &::before{
+              border-color: $mainDarkButtonColor $mainDarkButtonColor $mainDarkButtonColor transparent;
+            }
+            &:hover::before{
+              border-color: $mainRedColor $mainRedColor $mainRedColor transparent;
+            }
+            &::after{
+              border-left: 32px solid $mainDarkButtonColor;
+            }
+            &:hover::after{
+              border-left-color: $mainRedColor;
+            }
+          }
+          & li:last-child .header__breadcrumbsLink{
+            &:hover{
+              background: #006CE2;
+              color: white;
+              &::before{
+                border-color: #006CE2 #006CE2 #006CE2 transparent;
+              }
+            }
+          }
+        }
+      }
+      .header__toolsPanel{
+        .header__menuButton, .header__exitButton, .header__changeThemeButton{
+          background: $mainDarkButtonColor;
+        }
+        .header__iconMenuBtn{
+          background: url(../images/icons/headerMenuIc-white.png) center no-repeat;
+          background-size: 100% auto;
+        }
+        .header__iconExitBtn{
+          background: url(../images/icons/headerExitIc.png) center no-repeat;
+          background-size: 100% auto;
+        }
+        .header__iconChangeThemeBtn{
+          background: url(../images/icons/lightThemeBtn.png) center no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+}

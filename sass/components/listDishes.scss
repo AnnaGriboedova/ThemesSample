@@ -1,0 +1,72 @@
+@import "../variables";
+.contentBlock__listDishesWrapper{
+   display: inline-block;
+   height: 100%;
+   width: 660px;
+   float: left;
+   .contentBlock__listDishes{
+     display: inline-block;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     .listDishes__dishesBlock{
+       display: inline-block;
+       width: 160px;
+       height: 180px;
+       float: left;
+       margin: 0 5px 10px 0;
+       position: relative;
+       background: white;
+       &:nth-child(4n+4){
+         margin-right: 0;
+       }
+       .listDishes__dishesLink{
+         display: inline-block;
+         width: 100%;
+         height: 180px;
+         .listDishes__dishesImage{
+           display: inline-block;
+           max-height: 120px;
+           width: 100%;
+         }
+         .listDishes__dishesTitle{
+           display: inline-block;
+           width: 100%;
+           padding: 5px 0;
+           text-align: center;
+           background: white;
+         }
+         .listDishes__dishesPrice{
+           display: inline-block;
+           width: 100%;
+           height: 25px;
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           line-height: 25px;
+           text-align: center;
+           color: white;
+           background: $mainBlueColor;
+         }
+       }
+     }
+   }
+}
+
+.dark-theme .contentBlock__listDishesWrapper{
+  .contentBlock__listDishes{
+    .listDishes__dishesBlock{
+      background: $mainDarkGrayColor;
+      .listDishes__dishesLink{
+        .listDishes__dishesTitle{
+          color: $mainDarkGrayTextColor;
+          background: $mainDarkGrayColor;
+        }
+        .listDishes__dishesPrice{
+          color: white;
+          background: $mainBlueColor;
+        }
+      }
+    }
+  }
+}

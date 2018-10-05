@@ -1,0 +1,981 @@
+.header {
+  width: 100%;
+}
+
+.header .header__statusPanelWrapper {
+  background: black;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  height: 30px;
+  position: relative;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__dateInfo, .header .header__statusPanelWrapper .header__statusPanel .header__timeInfo {
+  display: inline-block;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__dateInfo {
+  padding: 0;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__dateTimeSeparator {
+  border: 0.3px solid;
+  display: inline-block;
+  height: 14px;
+  margin: auto 5px;
+  vertical-align: middle;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__cashierInfoWrapper {
+  display: inline-block;
+  float: right;
+  height: 100%;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__cashierInfoWrapper .header__cashierInfo {
+  display: inline-block;
+  height: 100%;
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__cashierInfoWrapper .header__cashierInfo:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.header .header__statusPanelWrapper .header__statusPanel .header__cashierInfoWrapper .header__cashierInfo .header__cashierIndicator {
+  display: inline-block;
+  background: url("../images/icons/indicatorOnOff.png");
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  background-position: 0 0;
+  vertical-align: middle;
+  margin: 0 40px;
+}
+
+.header .header__navPanelWrapper {
+  background: #F5F5F5;
+}
+
+.header .header__navPanelWrapper .header__navPanel {
+  display: inline-block;
+  height: 90px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__backButton {
+  display: inline-block;
+  height: 100%;
+  width: 160px;
+  float: left;
+  border: none;
+  background: url("../images/icons/arrowBackIc.png") white no-repeat;
+  background-size: 30px;
+  background-position: 30px;
+  font-size: 15px;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs {
+  display: inline-block;
+  height: 100%;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li:first-child a::before {
+  content: none;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li:last-child a::after {
+  content: none;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li {
+  height: 100%;
+  float: left;
+  margin: 0 30px 0 10px;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li:last-child .header__breadcrumbsLink {
+  background: #006CE2;
+  color: white;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li:last-child .header__breadcrumbsLink::before {
+  border-color: #006CE2 #006CE2 #006CE2 transparent;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 80px;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink {
+  background: white;
+  text-decoration: none;
+  position: relative;
+  max-width: 140px;
+  padding: 0 35px;
+  height: 100%;
+  display: inline-block;
+  color: black;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink:hover {
+  background: #ED312B;
+  color: white;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  border-width: 35px 0 35px 33px;
+  border-style: solid;
+  border-color: white white white transparent;
+  left: -33px;
+  display: inline-block;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink:hover::before {
+  border-color: #ED312B #ED312B #ED312B transparent;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 32px solid white;
+  right: -32px;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink:hover::after {
+  border-left-color: #ED312B;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink div {
+  height: 100%;
+  display: inline-block;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink div::before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__toolsPanel {
+  display: inline-block;
+  float: right;
+  height: 100%;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__menuButton, .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__exitButton, .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__changeThemeButton {
+  display: inline-block;
+  height: 100%;
+  width: 95px;
+  background: white;
+  border: none;
+  float: left;
+  margin: 0 0 0 5px;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconMenuBtn, .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconExitBtn, .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconChangeThemeBtn {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconMenuBtn {
+  background: url(../images/icons/headerMenuIc.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconExitBtn {
+  background: url(../images/icons/headerExitIc.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+.header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconChangeThemeBtn {
+  background: url(../images/icons/darkThemeBtn.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .header .header__navPanelWrapper {
+  background: #242424;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__backButton {
+  color: white;
+  background: url("../images/icons/arrowBackIc-white.png") #0D0D0D no-repeat;
+  background-size: 30px;
+  background-position: 30px;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink {
+  color: white;
+  background: #0D0D0D;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink:hover {
+  background: #ED312B;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink::before {
+  border-color: #0D0D0D #0D0D0D #0D0D0D transparent;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink:hover::before {
+  border-color: #ED312B #ED312B #ED312B transparent;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink::after {
+  border-left: 32px solid #0D0D0D;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList .header__breadcrumbsLink:hover::after {
+  border-left-color: #ED312B;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li:last-child .header__breadcrumbsLink:hover {
+  background: #006CE2;
+  color: white;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__breadcrumbs .header__breadcrumbsList li:last-child .header__breadcrumbsLink:hover::before {
+  border-color: #006CE2 #006CE2 #006CE2 transparent;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__menuButton, .dark-theme .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__exitButton, .dark-theme .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__changeThemeButton {
+  background: #0D0D0D;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconMenuBtn {
+  background: url(../images/icons/headerMenuIc-white.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconExitBtn {
+  background: url(../images/icons/headerExitIc.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .header .header__navPanelWrapper .header__navPanel .header__toolsPanel .header__iconChangeThemeBtn {
+  background: url(../images/icons/lightThemeBtn.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+.contentBlock__listDishesWrapper {
+  display: inline-block;
+  height: 100%;
+  width: 660px;
+  float: left;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock {
+  display: inline-block;
+  width: 160px;
+  height: 180px;
+  float: left;
+  margin: 0 5px 10px 0;
+  position: relative;
+  background: white;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock .listDishes__dishesLink {
+  display: inline-block;
+  width: 100%;
+  height: 180px;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock .listDishes__dishesLink .listDishes__dishesImage {
+  display: inline-block;
+  max-height: 120px;
+  width: 100%;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock .listDishes__dishesLink .listDishes__dishesTitle {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  background: white;
+}
+
+.contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock .listDishes__dishesLink .listDishes__dishesPrice {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  background: #016BD8;
+}
+
+.dark-theme .contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock {
+  background: #3B3B3B;
+}
+
+.dark-theme .contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock .listDishes__dishesLink .listDishes__dishesTitle {
+  color: #9A9A9A;
+  background: #3B3B3B;
+}
+
+.dark-theme .contentBlock__listDishesWrapper .contentBlock__listDishes .listDishes__dishesBlock .listDishes__dishesLink .listDishes__dishesPrice {
+  color: white;
+  background: #016BD8;
+}
+
+.contentBlock__orderPanel {
+  display: inline-block;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+.contentBlock__orderPanel .orderPanel__listPlaces {
+  display: inline-block;
+  width: 45px;
+  float: left;
+}
+
+.contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__addPlaceBtn {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  background: white;
+  border: none;
+  margin: 0 0 5px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__addPlaceBtn .orderPanel__addPlaceIcon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("../images/icons/addPlaceIc.png") center no-repeat;
+}
+
+.contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__placeBtn {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  margin: 0 0 5px 0;
+  background: white;
+  border: none;
+  padding: 0;
+}
+
+.contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__placeBtn .orderPanel__placeTitle {
+  display: inline-block;
+  white-space: pre;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__placeBtnActive {
+  background: #016BD8;
+  color: white;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper {
+  display: inline-block;
+  width: 500px;
+  float: left;
+  margin: 0 0 0 5px;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  float: left;
+  background: white;
+  position: relative;
+  margin: 0 0 5px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info {
+  display: inline-block;
+  height: 100%;
+  margin: 0 5px 0 5px;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info::after {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  height: 100%;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__infoPanelIcon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: url("../images/icons/infoPanelSprite.png") no-repeat;
+  background-size: auto 100%;
+  vertical-align: middle;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__personIcon {
+  background-position: 0 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__checkIcon {
+  background-position: -23px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__placeIcon {
+  background-position: -47px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__infoNumber {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__waiterInfo {
+  display: inline-block;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 5px 0 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList {
+  display: inline-block;
+  width: 100%;
+  min-height: 535px;
+  background: white;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0 0 0;
+  padding: 0;
+  border: none;
+  border-spacing: 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable td {
+  padding: 9px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable th {
+  padding: 15px 0;
+  text-align: right;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable th:first-child {
+  text-align: left;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr th:last-child, .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr td:last-child {
+  padding: 0 5px 0 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr th:first-child, .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr td:first-child {
+  padding: 0 0 0 5px;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:first-child th:first-child {
+  border-left: 5px solid transparent;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+2) td:first-child {
+  border-left: 5px solid #7D7D7D;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(2n+2) td {
+  background: rgba(1, 107, 216, 0.2);
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+3) td:first-child {
+  border-left: 5px solid #016BD8;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+3) td:nth-child(2) {
+  color: #016BD8;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+4) td:first-child {
+  border-left: 5px solid #016BD8;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+4) td:nth-child(2) {
+  color: #016BD8;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+5) td:first-child {
+  border-left: 5px solid #ED312B;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+5) td:nth-child(2) {
+  color: #ED312B;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+6) td:first-child {
+  border-left: 5px solid #ED312B;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:nth-child(5n+6) td:nth-child(2) {
+  color: #ED312B;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable .orderPanel__productQuantity, .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable .orderPanel__productTotal {
+  text-align: right;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__totalPanel {
+  display: inline-block;
+  width: 100%;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__totalPanel > div {
+  display: inline-block;
+  width: 100%;
+  padding: 0 5px;
+  background: white;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__totalPanel > div:first-child {
+  margin: 0 0 5px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__prepayment, .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__subtotal {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__subtotal {
+  float: right;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__discount, .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__surcharge {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__surcharge {
+  float: right;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__total {
+  font-size: 30px;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__total .orderPanel__totalTitle, .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__total .orderPanel__totalResult {
+  margin: 5px 0;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__total .orderPanel__totalResult {
+  float: right;
+}
+
+.contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__total .orderPanel__totalPanel div span[class$="Result"] {
+  font-weight: bolder;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__addPlaceBtn {
+  background: #2B2B2B;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__addPlaceBtn .orderPanel__addPlaceIcon {
+  background: url("../images/icons/addPlaceIc-white.png") center no-repeat;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__placeBtn {
+  color: #9A9A9A;
+  background: #2B2B2B;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__listPlaces .orderPanel__placeBtnActive {
+  background: #ED312B;
+  color: white;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel {
+  background: #2B2B2B;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info {
+  color: white;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__infoPanelIcon {
+  background: url("../images/icons/infoPanelSprite-white.png") no-repeat;
+  background-size: auto 100%;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__personIcon {
+  background-position: 0 0;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__checkIcon {
+  background-position: -23px 0;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__placeIcon {
+  background-position: -47px 0;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__info .orderPanel__infoNumber {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__infoPanel .orderPanel__waiterInfo {
+  color: #9A9A9A;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList {
+  background: #2B2B2B;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable tr:first-child th {
+  color: white;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable .orderPanel__productTitle, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable .orderPanel__productQuantity, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__orderList .orderPanel__orderTable .orderPanel__productTotal {
+  color: #9A9A9A;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__totalPanel > div {
+  background: #2B2B2B;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__prepaymentTitle, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__subtotalTitle, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__discountTitle, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__surchargeTitle, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__totalTitle {
+  color: #9A9A9A;
+}
+
+.dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__prepaymentResult, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__subtotalResult, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__discountResult, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__surchargeResult, .dark-theme .contentBlock__orderPanel .orderPanel__orderWrapper .orderPanel__totalResult {
+  color: white;
+}
+
+.toolsPanelWrapper {
+  background: #F5F5F5;
+}
+
+.toolsPanelWrapper .toolsPanel {
+  height: 100px;
+  padding: 0 0 20px 0;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBtn {
+  display: inline-block;
+  float: left;
+  width: 95px;
+  height: 100%;
+  background: #F7F7F7;
+  border: none;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBtn .toolsPanel__scrollIc {
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  background: url("../images/icons/toolsPanelScrollIc.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBtn .toolsPanel__scrollTopIc {
+  background-position: 0 0;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBottomBtn {
+  margin-left: 5px;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBottomBtn .toolsPanel__scrollBottomIc {
+  background-position: 0 -28px;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons {
+  display: inline-block;
+  height: 100%;
+  width: 695px;
+  float: right;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsIc {
+  display: inline-block;
+  width: 35px;
+  height: 33px;
+  background: url("../images/icons/toolsBtnIcSprite1.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsBtnTitle {
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__stockBtn .toolsPanel__stockIc {
+  background-position: 0 0;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__discountsBtn .toolsPanel__discountsIc {
+  background-position: 0 -33px;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__actionsBtn .toolsPanel__actionsIc {
+  background-position: 0 -64px;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons {
+  display: inline-block;
+  margin-left: 55px;
+  height: 100%;
+  float: right;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__orderBtn {
+  padding-top: 40px;
+  font-size: 16px;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toWorkBtn {
+  background: url("../images/icons/toWorkBtnIc.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: white;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toPayBtn {
+  background: url("../images/icons/toPayBtnIc.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: white;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__toolsBtn, .toolsPanelWrapper .toolsPanel .toolsPanel__orderBtn {
+  background: white;
+  width: 125px;
+  height: 100%;
+  border: none;
+}
+
+.dark-theme .toolsPanelWrapper {
+  background: #242424;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__scrollBtn {
+  background: #0D0D0D;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__scrollBtn .toolsPanel__scrollIc {
+  background: url("../images/icons/toolsPanelScrollIc.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__scrollBottomBtn .toolsPanel__scrollBottomIc {
+  background-position: 0 -28px;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsIc {
+  background: url("../images/icons/toolsBtnIcSprite-white.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsBtnTitle {
+  color: white;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__stockBtn .toolsPanel__stockIc {
+  background-position: 0 0;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__discountsBtn .toolsPanel__discountsIc {
+  background-position: 0 -33px;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__actionsBtn .toolsPanel__actionsIc {
+  background-position: 0 -64px;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toWorkBtn {
+  background: url("../images/icons/toWorkBtnIc-white.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: #0D0D0D;
+  color: white;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toPayBtn {
+  background: url("../images/icons/toPayBtnIc-white.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: #0D0D0D;
+  color: white;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__toolsBtn, .dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__orderBtn {
+  background: #0D0D0D;
+}
+
+body {
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contentWrapper {
+  width: 1260px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+button {
+  outline: none;
+}
+
+.contentBlockWrapper {
+  background: #F5F5F5;
+}
+
+.contentBlock {
+  padding: 15px 0 10px 0;
+  height: 730px;
+}
+
+.dark-theme {
+  background: #242424;
+}
+
+.dark-theme .contentBlockWrapper {
+  background: #242424;
+}
+
+/*:root {
+    font-size: 25vmin;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.15s ease-out;
+
+
+}
+body.dark-theme {
+
+    background-color: #333;
+    color: #fff;
+}
+
+#change-theme-btn {
+    font: inherit;
+    padding: 0.1em 0.25em;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+
+
+}
+
+
+#change-theme-btn::before, #change-theme-btn::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    transition: all 0.15s ease-out;
+}
+#change-theme-btn::after {
+    background-color: #fff;
+    left: 100%;
+}
+#change-theme-btn:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.dark-theme #change-theme-btn {
+    color: #333;
+}
+.dark-theme #change-theme-btn::before {
+    left: -100%;
+}
+.dark-theme #change-theme-btn::after {
+    left: 0;
+}
+*/

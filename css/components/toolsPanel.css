@@ -1,0 +1,161 @@
+.toolsPanelWrapper {
+  background: #F5F5F5;
+}
+
+.toolsPanelWrapper .toolsPanel {
+  height: 100px;
+  padding: 0 0 20px 0;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBtn {
+  display: inline-block;
+  float: left;
+  width: 95px;
+  height: 100%;
+  background: #F7F7F7;
+  border: none;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBtn .toolsPanel__scrollIc {
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  background: url("../images/icons/toolsPanelScrollIc.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBtn .toolsPanel__scrollTopIc {
+  background-position: 0 0;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBottomBtn {
+  margin-left: 5px;
+}
+
+.toolsPanelWrapper .toolsPanel__scrollBottomBtn .toolsPanel__scrollBottomIc {
+  background-position: 0 -28px;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons {
+  display: inline-block;
+  height: 100%;
+  width: 695px;
+  float: right;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsIc {
+  display: inline-block;
+  width: 35px;
+  height: 33px;
+  background: url("../images/icons/toolsBtnIcSprite1.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsBtnTitle {
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__stockBtn .toolsPanel__stockIc {
+  background-position: 0 0;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__discountsBtn .toolsPanel__discountsIc {
+  background-position: 0 -33px;
+}
+
+.toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__actionsBtn .toolsPanel__actionsIc {
+  background-position: 0 -64px;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons {
+  display: inline-block;
+  margin-left: 55px;
+  height: 100%;
+  float: right;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__orderBtn {
+  padding-top: 40px;
+  font-size: 16px;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toWorkBtn {
+  background: url("../images/icons/toWorkBtnIc.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: white;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toPayBtn {
+  background: url("../images/icons/toPayBtnIc.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: white;
+}
+
+.toolsPanelWrapper .toolsPanel .toolsPanel__toolsBtn, .toolsPanelWrapper .toolsPanel .toolsPanel__orderBtn {
+  background: white;
+  width: 125px;
+  height: 100%;
+  border: none;
+}
+
+.dark-theme .toolsPanelWrapper {
+  background: #242424;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__scrollBtn {
+  background: #0D0D0D;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__scrollBtn .toolsPanel__scrollIc {
+  background: url("../images/icons/toolsPanelScrollIc.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__scrollBottomBtn .toolsPanel__scrollBottomIc {
+  background-position: 0 -28px;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsIc {
+  background: url("../images/icons/toolsBtnIcSprite-white.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__toolsBtn .toolsPanel__toolsBtnTitle {
+  color: white;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__stockBtn .toolsPanel__stockIc {
+  background-position: 0 0;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__discountsBtn .toolsPanel__discountsIc {
+  background-position: 0 -33px;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel__toolsButtons .toolsPanel__actionsBtn .toolsPanel__actionsIc {
+  background-position: 0 -64px;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toWorkBtn {
+  background: url("../images/icons/toWorkBtnIc-white.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: #0D0D0D;
+  color: white;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__orderButtons .toolsPanel__toPayBtn {
+  background: url("../images/icons/toPayBtnIc-white.png") no-repeat;
+  background-size: 30px;
+  background-position: 48px 14px;
+  background-color: #0D0D0D;
+  color: white;
+}
+
+.dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__toolsBtn, .dark-theme .toolsPanelWrapper .toolsPanel .toolsPanel__orderBtn {
+  background: #0D0D0D;
+}

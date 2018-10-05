@@ -1,0 +1,243 @@
+<!doctype html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/common.css">
+        <script src="js/main.js" async></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__statusPanelWrapper contentWrapper">
+                <div class="header__statusPanel">
+                    <span class="header__dateInfo">
+                        Среда, 24 Марта
+                    </span>
+                    <div class="header__dateTimeSeparator"></div>
+                    <span class="header__timeInfo">
+                        16:07:38
+                    </span>
+                    <div class="header__cashierInfoWrapper">
+                        <div class="header__cashierInfo">
+                            <span class="header__cashier">
+                                <span class="header__cashierTitle">Кассир:</span>
+                                <span class="header__cashierName">Иванов Андрей</span>
+                            </span>
+                            <span class="header__cashierIndicator"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__navPanelWrapper contentWrapper">
+                <div class="header__navPanel">
+                    <button class="header__backButton">Назад</button>
+                    <div class="header__breadcrumbs">
+                        <ul class="header__breadcrumbsList">
+                            <li><a href="" class="header__breadcrumbsLink"><div><span>Меню-1</span></div></a></li>
+                            <li><a href="" class="header__breadcrumbsLink"><div><span>...</span></div></a></li>
+                            <li><a href="" class="header__breadcrumbsLink"><div><span>Основные блюда</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="header__toolsPanel">
+                        <button class="header__changeThemeButton" id="change-theme-btn">
+                            <span class="header__iconChangeThemeBtn"></span>
+                        </button>
+                        <button class="header__menuButton">
+                            <span class="header__iconMenuBtn"></span>
+                        </button>
+                        <button class="header__exitButton">
+                            <span class="header__iconExitBtn"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentBlockWrapper contentWrapper">
+            <div class="contentBlock">
+                <div class="contentBlock__listDishesWrapper">
+                    <ul class="contentBlock__listDishes">
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                        <li class="listDishes__dishesBlock">
+                            <a class="listDishes__dishesLink">
+                                <img class="listDishes__dishesImage" src="images/dishesImages/appleJuice.png">
+                                <div class="listDishes__dishesTitle">Яблочный сок</div>
+                                <div class="listDishes__dishesPrice">1,50</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contentBlock__orderPanel">
+                    <div class="orderPanel__listPlaces">
+                        <button class="orderPanel__addPlaceBtn">
+                            <span class="orderPanel__addPlaceIcon"></span>
+                        </button>
+                        <button class="orderPanel__placeBtn orderPanel__placeBtnActive"><span class="orderPanel__placeTitle">Место <span class="orderPanel__placeNumber">1</span></span></button>
+                        <button class="orderPanel__placeBtn"><span class="orderPanel__placeTitle">Место <span class="orderPanel__placeNumber">2</span></span></button>
+                    </div>
+                    <div class="orderPanel__orderWrapper">
+                        <div class="orderPanel__infoPanel">
+                            <div class="orderPanel__persons orderPanel__info">
+                                <span class="orderPanel__personIcon orderPanel__infoPanelIcon"></span>
+                                <span class="orderPanel__personNumber orderPanel__infoNumber">2</span>
+                            </div>
+                            <div class="orderPanel__checks orderPanel__info">
+                                <span class="orderPanel__checkIcon orderPanel__infoPanelIcon"></span>
+                                <span class="orderPanel__checkNumber orderPanel__infoNumber">113</span>
+                            </div>
+                            <div class="orderPanel__place orderPanel__info">
+                                <span class="orderPanel__placeIcon orderPanel__infoPanelIcon"></span>
+                                <span class="orderPanel__placeNumber orderPanel__infoNumber">7</span>
+                            </div>
+                            <div class="orderPanel__waiterInfo">
+                                <span class="orderPanel__waiterTitle">Официант: </span>
+                                <span class="orderPanel__waiterName">Кедрова Мария</span>
+                            </div>
+                        </div>
+                        <div class="orderPanel__orderList">
+                            <table class="orderPanel__orderTable">
+                                <tr>
+                                    <th>Блюдо</th>
+                                    <th>Кол-во</th>
+                                    <th>Всего</th>
+                                </tr>
+                                <tr>
+                                    <td class="orderPanel__productTitle">Водка "Царская"</td>
+                                    <td class="orderPanel__productQuantity">500г</td>
+                                    <td class="orderPanel__productTotal">25 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td class="orderPanel__productTitle">Водка "Царская"</td>
+                                    <td class="orderPanel__productQuantity">500г</td>
+                                    <td class="orderPanel__productTotal">25 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td class="orderPanel__productTitle">Водка "Царская"</td>
+                                    <td class="orderPanel__productQuantity">500г</td>
+                                    <td class="orderPanel__productTotal">25 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td class="orderPanel__productTitle">Водка "Царская"</td>
+                                    <td class="orderPanel__productQuantity">500г</td>
+                                    <td class="orderPanel__productTotal">25 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td class="orderPanel__productTitle">Водка "Царская"</td>
+                                    <td class="orderPanel__productQuantity">500г</td>
+                                    <td class="orderPanel__productTotal">25 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td class="orderPanel__productTitle">Водка "Царская"</td>
+                                    <td class="orderPanel__productQuantity">500г</td>
+                                    <td class="orderPanel__productTotal">25 BYN</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="orderPanel__totalPanel">
+                            <div>
+                                <div class="orderPanel__prepayment">
+                                    <span class="orderPanel__prepaymentTitle">Предоплата:</span>
+                                    <span class="orderPanel__prepaymentResult">0,00 BYN</span>
+                                </div>
+                                <div class="orderPanel__subtotal">
+                                    <span class="orderPanel__subtotalTitle">Подытог:</span>
+                                    <span class="orderPanel__subtotalResult">390,00 BYN</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div class="orderPanel__discount">
+                                        <span class="orderPanel__discountTitle">Скидка:</span>
+                                        <span class="orderPanel__discountResult">0,00 BYN</span>
+                                    </div>
+                                    <div class="orderPanel__surcharge">
+                                        <span class="orderPanel__surchargeTitle">Надбавка:</span>
+                                        <span class="orderPanel__surchargeResult">10%</span>
+                                    </div>
+                                </div>
+
+                                <div class="orderPanel__total">
+                                    <span class="orderPanel__totalTitle">Итого:</span>
+                                    <span class="orderPanel__totalResult">425,00 BYN</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolsPanelWrapper contentWrapper">
+            <div class="toolsPanel">
+                <button class="toolsPanel__scrollTopBtn toolsPanel__scrollBtn">
+                    <span class="toolsPanel__scrollTopIc toolsPanel__scrollIc"></span>
+                </button>
+                <button class="toolsPanel__scrollBottomBtn toolsPanel__scrollBtn">
+                    <span class="toolsPanel__scrollBottomIc toolsPanel__scrollIc"></span>
+                </button>
+                <div class="toolsPanel__toolsButtons">
+                    <button class="toolsPanel__stockBtn toolsPanel__toolsBtn">
+                        <span class="toolsPanel__stockIc toolsPanel__toolsIc"></span>
+                        <span class="toolsPanel__toolsBtnTitle">Акции</span>
+                    </button>
+                    <button class="toolsPanel__discountsBtn toolsPanel__toolsBtn">
+                        <span class="toolsPanel__discountsIc toolsPanel__toolsIc"></span>
+                        <span class="toolsPanel__toolsBtnTitle">Скидки</span>
+                    </button>
+                    <button class="toolsPanel__actionsBtn toolsPanel__toolsBtn">
+                        <span class="toolsPanel__actionsIc toolsPanel__toolsIc"></span>
+                        <span class="toolsPanel__toolsBtnTitle">Действия</span>
+                    </button>
+                    <div class="toolsPanel__orderButtons">
+                        <input type="submit" class="toolsPanel__toWorkBtn toolsPanel__orderBtn" value="В работу">
+                        <input type="submit" class="toolsPanel__toPayBtn toolsPanel__orderBtn" value="Оплатить">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

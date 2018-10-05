@@ -1,0 +1,281 @@
+@import "../variables";
+.contentBlock__orderPanel{
+  display: inline-block;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 10px;
+  .orderPanel__listPlaces{
+    display: inline-block;
+    width: 45px;
+    float: left;
+    .orderPanel__addPlaceBtn{
+      display: inline-block;
+      width: 100%;
+      height: 35px;
+      background: white;
+      border: none;
+      margin: 0 0 5px 0;
+      .orderPanel__addPlaceIcon{
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background: url("../images/icons/addPlaceIc.png") center no-repeat;
+      }
+    }
+    .orderPanel__placeBtn{
+      display: inline-block;
+      width: 100%;
+      height: 100px;
+      margin: 0 0 5px 0;
+      background: white;
+      border: none;
+      padding: 0;
+      .orderPanel__placeTitle{
+        display: inline-block;
+        white-space: pre;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+    }
+    .orderPanel__placeBtnActive{
+      background: $mainBlueColor;
+      color: white;
+    }
+  }
+  .orderPanel__orderWrapper{
+    display: inline-block;
+    width: 500px;
+    float: left;
+    margin: 0 0 0 5px;
+    .orderPanel__infoPanel{
+      display: inline-block;
+      width: 100%;
+      height: 35px;
+      float: left;
+      background: white;
+      position: relative;
+      margin: 0 0 5px 0;
+      .orderPanel__info{
+        display: inline-block;
+        height: 100%;
+        margin: 0 5px 0 5px;
+        &::after{
+          display: inline-block;
+          content: "";
+          vertical-align: middle;
+          height: 100%;
+
+        }
+        .orderPanel__infoPanelIcon{
+          display: inline-block;
+          height: 25px;
+          width: 25px;
+          background: url("../images/icons/infoPanelSprite.png") no-repeat;
+          background-size: auto 100%;
+          vertical-align: middle;
+        }
+        .orderPanel__personIcon{
+          background-position: 0 0;
+
+        }
+        .orderPanel__checkIcon{
+          background-position: -23px 0;
+        }
+        .orderPanel__placeIcon{
+          background-position: -47px 0;
+        }
+        .orderPanel__infoNumber{
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+      .orderPanel__waiterInfo{
+        display: inline-block;
+        right: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 5px 0 0;
+      }
+    }
+    .orderPanel__orderList{
+      display: inline-block;
+      width: 100%;
+      min-height: 535px;
+      background: white;
+      .orderPanel__orderTable{
+        width: 100%;
+        text-align: left;
+        margin: 10px 0 0 0;
+        padding: 0;
+        border: none;
+        border-spacing: 0;
+        & td{
+          padding: 9px 0;
+        }
+        & th{
+          padding: 15px 0;
+          text-align: right;
+        }
+        & th:first-child{
+          text-align: left;
+        }
+        & tr th:last-child, & tr td:last-child{
+          padding: 0 5px 0 0;
+        }
+        & tr th:first-child, & tr td:first-child{
+          padding: 0 0 0 5px;
+        }
+        & tr:first-child th:first-child{
+          border-left: 5px solid transparent;
+        }
+        & tr:nth-child(5n+2) td:first-child{
+          border-left: 5px solid #7D7D7D;
+        }
+        & tr:nth-child(2n+2) td{
+          background: $mainLightBlueColor;
+        }
+        & tr:nth-child(5n+3) td:first-child{
+          border-left: 5px solid $mainBlueColor;
+        }
+        & tr:nth-child(5n+3) td:nth-child(2){
+          color: $mainBlueColor;
+        }
+        & tr:nth-child(5n+4) td:first-child{
+          border-left: 5px solid $mainBlueColor;
+        }
+        & tr:nth-child(5n+4) td:nth-child(2){
+          color: $mainBlueColor;
+        }
+        & tr:nth-child(5n+5) td:first-child{
+          border-left: 5px solid $mainRedColor;
+        }
+        & tr:nth-child(5n+5) td:nth-child(2){
+          color: $mainRedColor;
+        }
+        & tr:nth-child(5n+6) td:first-child{
+          border-left: 5px solid $mainRedColor;
+        }
+        & tr:nth-child(5n+6) td:nth-child(2){
+          color: $mainRedColor;
+        }
+        .orderPanel__productQuantity, .orderPanel__productTotal{
+          text-align: right;
+        }
+      }
+    }
+    .orderPanel__totalPanel{
+      display: inline-block;
+      width: 100%;
+      & > div{
+        display: inline-block;
+        width: 100%;
+        padding: 0 5px;
+        background: white;
+      }
+      & > div:first-child{
+        margin: 0 0 5px 0;
+      }
+    }
+    .orderPanel__prepayment, .orderPanel__subtotal{
+      display: inline-block;
+      margin: 10px 0;
+    }
+    .orderPanel__subtotal{
+      float: right;
+    }
+    .orderPanel__discount, .orderPanel__surcharge{
+      display: inline-block;
+      margin: 10px 0;
+    }
+    .orderPanel__surcharge{
+      float: right;
+    }
+    .orderPanel__total{
+      font-size: 30px;
+      .orderPanel__totalTitle, .orderPanel__totalResult{
+        margin: 5px 0;
+      }
+      .orderPanel__totalResult{
+        float: right;
+      }
+      .orderPanel__totalPanel div span[class$="Result"]{
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+
+
+.dark-theme .contentBlock__orderPanel{
+  .orderPanel__listPlaces{
+    .orderPanel__addPlaceBtn{
+      background: $mainDarkGrayPanelColor;
+      .orderPanel__addPlaceIcon{
+        background: url("../images/icons/addPlaceIc-white.png") center no-repeat;
+      }
+    }
+    .orderPanel__placeBtn{
+      color: $mainDarkGrayTextColor;
+      background: $mainDarkGrayPanelColor;
+    }
+    .orderPanel__placeBtnActive{
+      background: $mainRedColor;
+      color: white;
+    }
+  }
+  .orderPanel__orderWrapper{
+    .orderPanel__infoPanel{
+      background: $mainDarkGrayPanelColor;
+      .orderPanel__info{
+        color: white;
+        .orderPanel__infoPanelIcon{
+          background: url("../images/icons/infoPanelSprite-white.png") no-repeat;
+          background-size: auto 100%;
+        }
+        .orderPanel__personIcon{
+          background-position: 0 0;
+        }
+        .orderPanel__checkIcon{
+          background-position: -23px 0;
+        }
+        .orderPanel__placeIcon{
+          background-position: -47px 0;
+        }
+        .orderPanel__infoNumber{
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+      .orderPanel__waiterInfo{
+        color: $mainDarkGrayTextColor;
+      }
+    }
+    .orderPanel__orderList{
+      background: $mainDarkGrayPanelColor;
+      .orderPanel__orderTable{
+        & tr:first-child th{
+          color: white;
+        }
+        .orderPanel__productTitle, .orderPanel__productQuantity, .orderPanel__productTotal{
+          color: $mainDarkGrayTextColor;
+        }
+      }
+    }
+    .orderPanel__totalPanel{
+      & > div{
+        background: $mainDarkGrayPanelColor;
+      }
+    }
+    .orderPanel__prepaymentTitle, .orderPanel__subtotalTitle, .orderPanel__discountTitle, .orderPanel__surchargeTitle, .orderPanel__totalTitle{
+      color: $mainDarkGrayTextColor;
+    }
+    .orderPanel__prepaymentResult, .orderPanel__subtotalResult, .orderPanel__discountResult, .orderPanel__surchargeResult, .orderPanel__totalResult{
+      color: white;
+    }
+  }
+}
